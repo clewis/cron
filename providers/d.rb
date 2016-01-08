@@ -17,8 +17,6 @@
 # limitations under the License.
 #
 
-use_inline_resources
-
 action :delete do
   file "/etc/cron.d/#{new_resource.name}" do
     action :delete
